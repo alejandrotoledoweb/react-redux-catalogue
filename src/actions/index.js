@@ -1,3 +1,3 @@
 export const FETCH_CATS = 'FETCH_DOGS';
 
-export const fetchDogs = () => ({ type: FETCH_CATS });
+export const fetchCats = () => ({ type: FETCH_CATS });
