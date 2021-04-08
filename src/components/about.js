@@ -8,3 +8,5 @@ const About = () => (
     <p>Also, you can check each image by itselt on another page by clicking it.</p>
   </div>
 );
+
+export default About;

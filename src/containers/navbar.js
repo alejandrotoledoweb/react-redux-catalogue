@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const Navbar = () => ( 
+const Navbar = () => (
   <main className="navbar">
     <div>
       <h3>Title of the project</h3>
