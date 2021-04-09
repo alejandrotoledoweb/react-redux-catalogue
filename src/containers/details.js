@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import { useParams } from 'react-router-dom';
 import { asyncFetchDetail } from '../actions';
 import Photo from '../components/photo';
-import loading from '../components/loading';
+import Loading from '../components/loading';
 
 const Detail = ({ cats, fetchDetail }) => {
   const [cat, setCat] = useState({ id: null, urls: { small: '', user: { name: '' } } });
