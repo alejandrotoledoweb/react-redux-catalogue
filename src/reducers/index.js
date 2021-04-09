@@ -7,7 +7,7 @@ export const defaultState = {
   page: 1,
 };
 
-const catReducer = (state = defaultState, action) => {
+export const catReducer = (state = defaultState, action) => {
   switch (action.type) {
     case FETCH_CATS:
       return { ...state, loading: true };
