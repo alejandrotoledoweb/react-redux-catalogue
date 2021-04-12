@@ -13,7 +13,7 @@ const Photo = ({
 );
 
 Photo.defaultProps = {
-  id: 'h2QPKvzieC4',
+  id: 'ZCHj_2lJP00',
 };
 
 Photo.propTypes = {
