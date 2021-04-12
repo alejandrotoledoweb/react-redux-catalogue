@@ -34,7 +34,7 @@ To get a local copy up and follow these simple example steps.
 - Local Machine installed [Nodejs](https://nodejs.org/en/download/)
 - Yarn as a package manager
 - A code editor as [Visual Studio](https://code.visualstudio.com/download), Sublime,etc.
-- To be able to have the project working on the local environment you need to create a n account and a `new project` on the UNSPLASH API. By doing this, you will be given an API KEY to use it on the project and the PI from Unsplash.
+- To be able to have the project working on the local environment you need to create an account and then create a `new app` on the [UNSPLASH API PAGE](https://unsplash.com/developers). By doing this, you will be given an API KEY to use on the project and the PI from Unsplash.
 - With this API key you need to create a `.env` file on the root directory and put this `REACT_APP_CATALOGUE_UNSPLASH_API_KEY=` followed by the API key obtained before.
 
 ### Setup
@@ -63,9 +63,9 @@ You will also see any lint errors in the console.
 
 For this project I test the components using the following dependencies:
 
--
--
--
+- @testing-library/jest-dom
+- @testing-library/react
+- @testing-library/user-event
 
 Before running `yarn test` be sure to run `npm i` to install all dependencies required for tests.
 
