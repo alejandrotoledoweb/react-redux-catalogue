@@ -27,13 +27,13 @@ const Home = ({ dogs, fetchDogs, setPage }) => {
 
   return (
     <>
-      <ul className="d-flex list-unstyled">
+      <ul className="d-flex list-unstyled justify-content-center">
         {
           pagination.map((page) => (
             <li key={page}>
               <Link
                 to="/"
-                className="btn bg-green m-2"
+                className="btn bg-ligth bg-gradient m-2 border"
                 onClick={
                   () => setPage(page)
                 }

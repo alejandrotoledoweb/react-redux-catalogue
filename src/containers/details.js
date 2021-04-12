@@ -5,6 +5,7 @@ import PropTypes from 'prop-types';
 import { asyncFetchDetail } from '../actions';
 import Photo from '../components/photo';
 import Loading from '../components/loading';
+import '../styles/details.css';
 
 const Detail = ({ dogs, fetchDetail }) => {
   const [dog, setDog] = useState({ id: null, urls: { small: '' }, user: { name: '' } });
@@ -37,13 +38,15 @@ const Detail = ({ dogs, fetchDetail }) => {
         )
           : ''
       }
-      <div className="d-flex">
-        <div className="col-6">
+      <div className="conatiner-fluid d-flex flex-row bd-highlight bg-ligth mt-2 mb-2 ml-3 mr-3 pt-4 pb-4 pl-3 pr-3">
+        <div className="col-5">
           <Photo id={dogId} url={urls.small} photoContainer="photo-detail-container" photoStyle="photo-detail" />
         </div>
-        <div className="col-6 d-flex flex-column photo-info">
-          <div><h4 className="h6 font-lilita-one">{description}</h4></div>
+        <div className="col-5 d-flex flex-column photo-info">
+          <h4>Photo description</h4>
+          <p className="description">{description}</p>
           <div>{alt}</div>
+          <span>--------</span>
           <div className="font-lilita-one">
             <span>Photo taken by: </span>
             <span>{author.name}</span>

@@ -7,8 +7,8 @@ const Photo = ({
   photoStyle,
   photoContainer,
 }) => (
-  <div className={`${photoContainer} col-12`} key={id}>
-    <img className={photoStyle} src={url} alt="Dog" />
+  <div className={`${photoContainer} d-flex align-items-center`} key={id}>
+    <img className={photoStyle} src={url} alt="Cat" />
   </div>
 );
 
