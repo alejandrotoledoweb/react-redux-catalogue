@@ -1,34 +1,33 @@
 import React, { useEffect, useState } from 'react';
-import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { useParams } from 'react-router-dom';
+import PropTypes from 'prop-types';
 import { asyncFetchDetail } from '../actions';
 import Photo from '../components/photo';
 import Loading from '../components/loading';
 
-const Detail = ({ cats, fetchDetail }) => {
-  const [cat, setCat] = useState({ id: null, urls: { small: '', user: { name: '' } } });
+const Detail = ({ dogs, fetchDetail }) => {
+  const [dog, setDog] = useState({ id: null, urls: { regular: '' }, user: { name: '' } });
   const [loaded, setLoaded] = useState(false);
-  const { catId } = useParams();
-
+  const { dogId } = useParams();
   useEffect(() => {
     if (loaded === false) {
-      fetchDetail(catId, 1)
-        .then(({ cat }) => {
+      fetchDetail(dogId, 1)
+        .then(({ dog }) => {
           setLoaded(true);
-          setCat(cat);
+          setDog(dog);
         });
     }
   }, [loaded]);
 
-  const { loading } = cats;
+  const { loading } = dogs;
 
   const {
     urls,
     alt_description: alt,
     description,
     user: author,
-  } = cat;
+  } = dog;
 
   return (
     <>
@@ -40,24 +39,23 @@ const Detail = ({ cats, fetchDetail }) => {
       }
       <div className="d-flex">
         <div className="col-6">
-          <Photo id={catId} url={urls.regular} photoContainer="photo-detail-container" photoStyle="photo-detail" />
+          <Photo id={dogId} url={urls.regular} photoContainer="photo-detail-container" photoStyle="photo-detail" />
         </div>
-        <div>
-          <h3>{description}</h3>
-          <p>{alt}</p>
-          <div>
-            <span>Author: </span>
+        <div className="col-6 d-flex flex-column photo-info">
+          <div><h4 className="h6 font-lilita-one">{description}</h4></div>
+          <div>{alt}</div>
+          <div className="font-lilita-one">
+            <span>Photo by: </span>
             <span>{author.name}</span>
           </div>
         </div>
-
       </div>
     </>
   );
 };
 
 Detail.propTypes = {
-  cats: PropTypes.shape({
+  dogs: PropTypes.shape({
     loading: PropTypes.bool,
     filter: PropTypes.string,
   }).isRequired,
@@ -65,11 +63,11 @@ Detail.propTypes = {
 };
 
 const mapStateToProps = (state) => ({
-  cats: state,
+  dogs: state,
 });
 
 const mapDispatchToProps = (dispatch) => ({
-  featchDetails: (id) => dispatch(asyncFetchDetail(id)),
+  fetchDetail: (id) => dispatch(asyncFetchDetail(id)),
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(Detail);

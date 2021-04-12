@@ -8,12 +8,12 @@ const Photo = ({
   photoContainer,
 }) => (
   <div className={`${photoContainer} col-12`} key={id}>
-    <img className={photoStyle} src={url} alt="cat" />
+    <img className={photoStyle} src={url} alt="Dog" />
   </div>
 );
 
 Photo.defaultProps = {
-  id: 'ZCHj_2lJP00',
+  id: 'h2QPKvzieC4',
 };
 
 Photo.propTypes = {
