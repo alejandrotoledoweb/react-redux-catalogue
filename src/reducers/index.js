@@ -1,7 +1,7 @@
 import {
-  FETCHING_DOGS,
-  FETCH_DOGS_SUCCESS,
-  FETCH_DOGS_FAILURE,
+  FETCHING,
+  FETCH_SUCCESS,
+  FETCH_FAILURE,
   FETCHING_DETAIL,
   FETCH_DETAIL_SUCCESS,
   FETCH_DETAIL_FAILURE,
@@ -20,15 +20,15 @@ export const defaultState = {
 
 const dogsReducer = (state = defaultState, action) => {
   switch (action.type) {
-    case FETCHING_DOGS:
+    case FETCHING:
       return { ...state, loading: true };
-    case FETCH_DOGS_SUCCESS:
+    case FETCH_SUCCESS:
       return {
         list: action.dogs.results,
         loading: false,
         filter: action.filter,
       };
-    case FETCH_DOGS_FAILURE:
+    case FETCH_FAILURE:
       return { ...state, loading: false, message: action.error };
     case FETCHING_DETAIL:
       return { ...state, loading: true };

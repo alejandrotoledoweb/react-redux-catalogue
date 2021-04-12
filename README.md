@@ -12,7 +12,7 @@ I use yarn files and assets.
 ## Built With
 
 - JavaScript
-- React 
+- React
 - Redux
 
 ### Linters Used
@@ -23,6 +23,11 @@ I use yarn files and assets.
 ## Live Demo - Try the game here
 
 [Live Demo Link](https://react-redux-catalogue-cats.netlify.app/)
+
+## Demostration
+
+[Video of Demostration of the app](https://www.loom.com/share/c22fe016473841229368d8e8b60898d5)
+[Video of technical concepts](https://www.loom.com/share/891cb3344f76423e8716f6375b09f644)
 
 
 ## Getting Started
