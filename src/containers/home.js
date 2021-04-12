@@ -23,7 +23,7 @@ const Home = ({ dogs, fetchDogs, setPage }) => {
     loading,
   } = dogs;
 
-  const pagination = [1, 2, 3, 4, 5];
+  const pagination = [1, 2, 3];
 
   return (
     <>
