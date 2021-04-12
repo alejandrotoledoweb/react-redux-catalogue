@@ -7,7 +7,7 @@ import Photo from '../components/photo';
 import Spinner from '../components/loading';
 
 const Home = ({ dogs, fetchDogs, setPage }) => {
-  const [filter, setFilter] = useState('cats-human');
+  const [filter, setFilter] = useState('cats');
   useEffect(() => {
     if (dogs.page !== undefined) {
       fetchDogs(filter, dogs.page);

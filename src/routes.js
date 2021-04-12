@@ -8,13 +8,15 @@ import Navbar from './containers/navbar';
 const Routes = () => (
   <BrowserRouter>
     <Navbar />
-    <Switch>
-      <Route exact path="/" component={Home} />
-      <Route path="/about" component={About} />
-      <Route path="/detail" component={Detail} />
-      <Route path="/category/:id" component={Home} />
-      <Route path="/photos/:dogId" component={Detail} />
-    </Switch>
+    <main className="container">
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route path="/about" component={About} />
+        <Route path="/detail" component={Detail} />
+        <Route path="/category/:id" component={Home} />
+        <Route path="/photos/:dogId" component={Detail} />
+      </Switch>
+    </main>
   </BrowserRouter>
 );
 

@@ -35,7 +35,7 @@ export const asyncFetchDetail = (id) => (
     dispatch(fetchDetail());
     const searchPage = `/photos/${id}`;
 
-    const url = `https://api.unsplash.com/${searchPage}?client_id=${process.env.REACT_APP_UNSPLASH_API_KEY}`;
+    const url = `https://api.unsplash.com/${searchPage}?client_id=${process.env.REACT_APP_CATALOGUE_UNSPLASH_API_KEY}`;
     return fetch(`${url}`)
       .then((result) => result.json())
       .then((data) => dispatch(fetchDetailSuccess(data)))

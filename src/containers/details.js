@@ -7,7 +7,7 @@ import Photo from '../components/photo';
 import Loading from '../components/loading';
 
 const Detail = ({ dogs, fetchDetail }) => {
-  const [dog, setDog] = useState({ id: null, urls: { regular: '' }, user: { name: '' } });
+  const [dog, setDog] = useState({ id: null, urls: { small: '' }, user: { name: '' } });
   const [loaded, setLoaded] = useState(false);
   const { dogId } = useParams();
   useEffect(() => {
@@ -39,7 +39,7 @@ const Detail = ({ dogs, fetchDetail }) => {
       }
       <div className="d-flex">
         <div className="col-6">
-          <Photo id={dogId} url={urls.regular} photoContainer="photo-detail-container" photoStyle="photo-detail" />
+          <Photo id={dogId} url={urls.small} photoContainer="photo-detail-container" photoStyle="photo-detail" />
         </div>
         <div className="col-6 d-flex flex-column photo-info">
           <div><h4 className="h6 font-lilita-one">{description}</h4></div>
