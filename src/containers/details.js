@@ -45,7 +45,7 @@ const Detail = ({ dogs, fetchDetail }) => {
           <div><h4 className="h6 font-lilita-one">{description}</h4></div>
           <div>{alt}</div>
           <div className="font-lilita-one">
-            <span>Photo by: </span>
+            <span>Photo taken by: </span>
             <span>{author.name}</span>
           </div>
         </div>

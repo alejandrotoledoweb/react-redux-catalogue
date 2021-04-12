@@ -1,9 +1,9 @@
 const CATEGORIES = [
-  { id: 1, name: 'Cats playing', url: 'cats-playing' },
-  { id: 2, name: 'Cats eating', url: 'cats-eating' },
-  { id: 3, name: 'Cats and animals', url: 'cats-another-animals' },
-  { id: 4, name: 'Cats and girls', url: 'cats-and-girls' },
-  { id: 5, name: 'Cats adorable', url: 'cats-adorable' },
+  { id: 1, name: 'Cats blacks', url: 'black-cats' },
+  { id: 2, name: 'Cats sleeping', url: 'cats-sleeping' },
+  { id: 3, name: 'Cats and animals', url: 'cats-and-dogs' },
+  { id: 4, name: 'Cats and girls', url: 'cats-girls' },
+  { id: 5, name: 'Cats adorable', url: 'cats-faces' },
 ];
 
 export default CATEGORIES;

@@ -16,8 +16,9 @@ const Navbar = ({ setFilter }) => {
         <h3>Title of the project</h3>
       </div>
       <div className="links">
-        <Link to="/" className="btn-link">Home</Link>
-        <Link to="/about" className="btn-link">About</Link>
+        <Link to="/" className="btn-link">Home  </Link>
+        <Link to="/about" className="btn-link">About  </Link>
+        <Link to="/shop" className="btn-link">Shop  </Link>
       </div>
       <div>
         <Filter handleOnClick={handleClick} />
