@@ -38,7 +38,7 @@ const Detail = ({ dogs, fetchDetail }) => {
         )
           : ''
       }
-      <div className="conatiner-fluid d-flex flex-row bd-highlight bg-ligth mt-2 mb-2 ml-3 mr-3 pt-4 pb-4 pl-3 pr-3">
+      <div className="conatiner-fluid d-flex flex-row bd-highlight bg-ligth mt-2 mb-2 ml-3 mr-3 pt-4 pb-4 pl-3 pr-3 rounded">
         <div className="col-5">
           <Photo id={dogId} url={urls.small} photoContainer="photo-detail-container" photoStyle="photo-detail" />
         </div>
