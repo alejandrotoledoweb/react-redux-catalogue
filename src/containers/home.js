@@ -4,7 +4,8 @@ import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { asyncFetchDogs, setPage } from '../actions';
 import Photo from '../components/photo';
-import Spinner from '../components/loading';
+import Loading from '../components/loading';
+import '../styles/home.css';
 
 const Home = ({ dogs, fetchDogs, setPage }) => {
   const [filter, setFilter] = useState('cats');
@@ -46,7 +47,7 @@ const Home = ({ dogs, fetchDogs, setPage }) => {
         }
       </ul>
       {
-        loading ? (<Spinner />)
+        loading ? (<Loading />)
           : ''
       }
       <div className="d-flex flex-wrap">
@@ -56,7 +57,7 @@ const Home = ({ dogs, fetchDogs, setPage }) => {
             to={
               `/photos/${dog.id}`
             }
-            className="col-3 col-md-4 p-2 mb-2"
+            className="d-flex justify-content-center col-lg-4 col-md-6 col-sm-12 p-2 mb-2"
           >
             <Photo photoContainer="photo-container" photoStyle="photo" key={dog.id} id={dog.id} url={dog.urls.small} />
           </Link>

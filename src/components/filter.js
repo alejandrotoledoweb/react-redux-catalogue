@@ -13,7 +13,6 @@ const Filter = ({ handleOnClick }) => (
         key={category.id}
       >
         {category.name}
-        <span>   /  </span>
       </Link>
     ))}
 

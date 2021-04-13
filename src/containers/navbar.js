@@ -12,16 +12,18 @@ const Navbar = ({ setFilter }) => {
   };
 
   return (
-    <main className="navbar d-flex flex-row justify-content-around pt-4 pb-4 mb-5">
+    <main className="navbar d-flex flex-row flex-wrap justify-content-around pt-4 pb-4 mb-5 pb-5">
       <div>
-        <h3 className="text-white">Catalogue of cats</h3>
+        <div>
+          <h3 className="text-white">Catalogue of cats</h3>
+        </div>
+        <div className="links">
+          <Link to="/" className="btn-link">Home  </Link>
+          <Link to="/about" className="btn-link">About  </Link>
+          <Link to="/shop" className="btn-link">Shop  </Link>
+        </div>
       </div>
-      <div className="links">
-        <Link to="/" className="btn-link">Home  </Link>
-        <Link to="/about" className="btn-link">About  </Link>
-        <Link to="/shop" className="btn-link">Shop  </Link>
-      </div>
-      <div className="dropdown position-absolute">
+      <div className="dropdown position-absolute pt-5 mt-5">
         <button className="btn btn-primary rounded dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
           Search by category
         </button>
