@@ -1,9 +1,9 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# React - Redux - Catalogue Project
+# Catalogue of Dog Clothes
 
 This project is part of the React-Redux chapter in the Microverse Program.
-In this project we develop the knowledge to use React and Redux together to create a catalogue page using API to fetch images.
+In this project, we develop the knowledge to use React and Redux together to create a catalogue page using API to fetch images.
 
 ![screenshot](./catalogue-cats.png)
 
@@ -26,7 +26,7 @@ I use yarn files and assets.
 
 ## Demostration
 
-[Video of Demostration of the app](https://www.loom.com/share/c22fe016473841229368d8e8b60898d5)
+[Video of Demonstration of the app](https://www.loom.com/share/c22fe016473841229368d8e8b60898d5)
 
 
 [Video of technical concepts](https://www.loom.com/share/891cb3344f76423e8716f6375b09f644)
@@ -98,9 +98,9 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point, you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However, we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
 ## Authors
 
@@ -108,7 +108,7 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 
 - GitHub: [@alejandrotoledoweb](https://github.com/alejandrotoledoweb)
 - Twitter: [@alejot](https://twitter.com/alejot)
-- LinkedIn: [Alejandro Toledo](https://www.linkedin.com/in/alejandro-toledo-3b444b109/)
+- LinkedIn: [Alejandro Toledo](https://www.linkedin.com/in/alejandro-toledo-freire/)
 
 ## 🤝 Contributing
 
