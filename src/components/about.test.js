@@ -8,4 +8,9 @@ describe('About component', () => {
     render(<About />);
     screen.getByText(/About Page/);
   });
+
+  test('test to render negative case', () => {
+    render(<About />);
+    screen.getByText('This is a page about cats', { exact: false });
+  });
 });

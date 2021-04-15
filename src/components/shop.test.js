@@ -8,4 +8,9 @@ describe('Shop component', () => {
     render(<Shop />);
     screen.getByText(/Shop Clothes for Cats/);
   });
+
+  test('test to render negative case', () => {
+    render(<Shop />);
+    screen.getByText('The page for shopping', { exact: false });
+  });
 });

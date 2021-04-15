@@ -31,4 +31,9 @@ describe('Filter', () => {
     render(<Filter handleOnClick={() => handleClick()} />, { wrapper: MemoryRouter });
     screen.getByText(/Cats adorable/);
   });
+
+  test('test negative case', () => {
+    render(<Filter handleOnClick={() => handleClick()} />, { wrapper: MemoryRouter });
+    screen.getByText('Cats blacks', { exact: false });
+  });
 });
