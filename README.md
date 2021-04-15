@@ -32,6 +32,9 @@ I use yarn files and assets.
 [Video of technical concepts](https://www.loom.com/share/891cb3344f76423e8716f6375b09f644)
 
 
+[Video about VirtualDOM](https://www.loom.com/share/e3fcb2bdf4774924a2e6278285681752)
+
+
 ## Getting Started
 
 To get a local copy up and follow these simple example steps.
