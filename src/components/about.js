@@ -1,7 +1,7 @@
 import React from 'react';
 
 const About = () => (
-  <div className="text-center">
+  <div className="text-center text-white">
     <h2 className="mb-5">About Page</h2>
     <p>This is a page about cats, and DOGS ARE NOT ALLOWED in here.</p>
     <p>You can check the images by categories with the filter above.</p>
