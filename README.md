@@ -22,7 +22,7 @@ I use yarn files and assets.
 
 ## Live Demo - Try the game here
 
-[Live Demo Link](https://react-redux-catalogue-cats.netlify.app/)
+[Live Demo Link](https://60785834eec2e8508716062f--react-redux-catalogue-cats.netlify.app/)
 
 ## Demostration
 
