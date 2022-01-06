@@ -5,7 +5,7 @@
 This project is part of the React-Redux chapter in the Microverse Program.
 In this project, we develop the knowledge to use React and Redux together to create a catalogue page using API to fetch images.
 
-![screenshot](./catalogue-cats.png)
+![screenshot](./catalogue_of_photos.png)
 
 I use yarn files and assets.
 

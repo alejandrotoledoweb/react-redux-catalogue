@@ -18,13 +18,13 @@ export const defaultState = {
   detail: '',
 };
 
-const dogsReducer = (state = defaultState, action) => {
+export const dogsReducer = (state = defaultState, action) => {
   switch (action.type) {
     case FETCHING:
       return { ...state, loading: true };
     case FETCH_SUCCESS:
       return {
-        list: action.dogs.results,
+        list: action.dogs.results ? action.dogs.results : [],
         loading: false,
         filter: action.filter,
       };
@@ -48,5 +48,3 @@ const dogsReducer = (state = defaultState, action) => {
       return state;
   }
 };
-
-export default dogsReducer;
